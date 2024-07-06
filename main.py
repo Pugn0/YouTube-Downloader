@@ -90,7 +90,7 @@ def main():
         clear_terminal()
         opcoes = "Digite o número da opção desejada:\n1 - baixar um vídeo \n2 - baixar uma playlist completa \n3 - baixar todos os vídeos do canal \n4 - baixar todos os shorts do canal \n> "
         choice = int(input(opcoes).lower())
-        url = input("Digite a URL do vídeo ou da playlist: ")
+        url = input("Digite a URL do canal, vídeo ou da playlist: ")
         download_path = input("Digite o caminho do diretório para salvar o(s) vídeo(s): ")
 
         if choice == 1:
@@ -103,7 +103,7 @@ def main():
         elif choice == 4:
             list_and_download_videos(url, download_path, 'shorts')
         else:
-            print("Opção inválida. Por favor, digite 'video' ou 'playlist'.")
+            print("Opção inválida.")
     except Exception as e:
         print(f"Erro durante a execução do script: {e}")
         
