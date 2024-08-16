@@ -18,8 +18,27 @@ Antes de começar, você precisa ter o Python instalado em seu sistema (Python 3
 Para utilizar este script, siga os passos abaixo:
 
 1. Clone este repositório usando Git:
+    ```bash
+    git clone https://github.com/Pugn0/YouTube-Downloade.git
+    ```
 2. Navegue até o diretório clonado:
+    ```bash
+    cd YouTube-Downloader
+    ```
 3. Instale as dependências necessárias:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Como Usar
+
+Após a instalação, você pode executar o script diretamente do terminal. O script interage com o usuário através do terminal para receber as entradas necessárias (tipo de download, URL e diretório de destino).
+
+Para iniciar o script, execute:
+    ```bash
+    python nome_do_script.py
+    ```
+
 
 ## Como Usar
 
