@@ -94,8 +94,12 @@ def main():
         download_path = input("Digite o caminho do diretório para salvar o(s) vídeo(s): ")
 
         if choice == 1:
-            yt = YouTube(url)
-            download_video(yt, download_path)
+            ydl_opts = {
+                'outtmpl': f'{download_path}/%(title)s.%(ext)s',
+                'quiet': False,
+            }
+            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                ydl.download([url])
         elif choice == 2:
             download_playlist(url, download_path)
         elif choice == 3:
@@ -109,4 +113,3 @@ def main():
         
 if __name__ == "__main__":
     main()
-
