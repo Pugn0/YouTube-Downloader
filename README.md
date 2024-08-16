@@ -1,67 +1,59 @@
 # YouTube Downloader
 
-Este script Python permite baixar vídeos e playlists completas do YouTube diretamente para o seu computador. Utiliza a biblioteca `pytube` para gerenciar os downloads e suporta múltiplos downloads simultâneos através de threading, adaptando-se dinamicamente ao número de núcleos de CPU do sistema.
+This Python script allows you to download individual videos and complete playlists from YouTube directly to your computer. It uses the `pytube` library to manage downloads and supports multiple simultaneous downloads through threading, dynamically adapting to the number of CPU cores on your system.
 
-## Funcionalidades
+## Features
 
-- Download de vídeos individuais do YouTube.
-- Download de playlists completas do YouTube.
-- Downloads simultâneos usando threading baseado no número de núcleos da CPU.
-- Verificação e aviso se o vídeo já existe no diretório especificado.
+- Download individual YouTube videos.
+- Download complete YouTube playlists.
+- Simultaneous downloads using threading based on the number of CPU cores.
+- Check if the video already exists in the specified directory and notify accordingly.
 
-## Pré-requisitos
+## Prerequisites
 
-Antes de começar, você precisa ter o Python instalado em seu sistema (Python 3.6 ou superior é recomendado). Além disso, este script depende da biblioteca `pytube`, que pode ser instalada via pip.
+Before you begin, make sure you have Python installed on your system (Python 3.6 or higher is recommended). Additionally, this script depends on the `pytube` library, which can be installed via pip.
 
-## Instalação
+## Installation
 
-Para utilizar este script, siga os passos abaixo:
+To use this script, follow the steps below:
 
-1. Clone este repositório usando Git:
+1. Clone this repository using Git:
     ```bash
-    git clone https://github.com/Pugn0/YouTube-Downloade.git
+    git clone https://github.com/Pugn0/YouTube-Downloader.git
     ```
-2. Navegue até o diretório clonado:
+2. Navigate to the cloned directory:
     ```bash
     cd YouTube-Downloader
     ```
-3. Instale as dependências necessárias:
+3. Install the necessary dependencies:
     ```bash
     pip install -r requirements.txt
     ```
 
-## Como Usar
+## How to Use
 
-Após a instalação, você pode executar o script diretamente do terminal. O script interage com o usuário através do terminal para receber as entradas necessárias (tipo de download, URL e diretório de destino).
+After installation, you can run the script directly from the terminal. The script interacts with the user through the terminal to receive necessary inputs (download type, URL, and destination directory).
 
-Para iniciar o script, execute:
+To start the script, run:
     ```bash
-    python nome_do_script.py
+    python script_name.py
     ```
 
+You will be prompted to choose between downloading a video or a complete playlist, provide the corresponding URL, and specify the directory where you want to save the downloaded files.
 
-## Como Usar
+## Disclaimer
 
-Após a instalação, você pode executar o script diretamente do terminal. O script interage com o usuário através do terminal para receber as entradas necessárias (tipo de download, URL e diretório de destino).
+This script is provided for educational and demonstration purposes only. Using scripts to download YouTube videos may violate YouTube's terms of service. It is the user's responsibility to ensure that their use of the script complies with applicable terms and laws.
 
-Para iniciar o script, execute:
+## Contributions
 
+Contributions to the project are welcome. To contribute, please create a pull request with your suggestions for improvements or fixes.
 
-Você será solicitado a escolher entre baixar um vídeo ou uma playlist completa, fornecer a URL correspondente e o diretório onde deseja salvar os arquivos baixados.
+## License
 
-## Aviso Legal
+This project is distributed under the MIT license. See the `LICENSE` file for more details.
 
-Este script é fornecido para fins educacionais e de demonstração. O uso de scripts para baixar vídeos do YouTube pode violar os termos de serviço do YouTube. É responsabilidade do usuário garantir que seu uso do script esteja em conformidade com os termos e leis aplicáveis.
-
-## Contribuições
-
-Contribuições para o projeto são bem-vindas. Para contribuir, por favor, crie um pull request com suas sugestões de melhorias ou correções.
-
-## Licença
-
-Este projeto é distribuído sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
-## Contato
+## Contact
 
 - GitHub: [Pugn0](https://github.com/Pugn0)
 - Telegram: [pugno_fc](https:/t.me/pugno_fc)
